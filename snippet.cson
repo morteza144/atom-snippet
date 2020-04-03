@@ -1,0 +1,64 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+'.text.html.basic':
+    'Widget Title':
+      'prefix': 'scope'
+      'body': '''
+    Plain Text: .text.plain
+    HTML: .text.html.basic
+    CSS: .source.css
+    Sass: .source.sass
+    LESS: .source.css.less
+    JavaScript: .source.js
+    PHP: .text.html.php
+    Python: .source.python
+    Java: .source.java
+    '''
+    'tow snippet':
+      'prefix': 'bbb'
+      'body' : 'my second snippet'
+      'description':'thsi is description'
+      'descriptionMoreURL': 'razaan.ir/atom/snippet/html_snippet.php'
+  'Snippet Name':
+    'prefix': 'Snippet Trigger'
+    'body': 'Hello World!'
+
+
+
+
+
+
+'.source.js':
+  'if, else if, else':
+    'prefix': 'ieie'
+    'body': """
+      if (${1:true}) {
+        $2
+      } else if (${3:false}) {
+        $4
+      } else {
+        $5
+      }
+    """
+
+
+
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
